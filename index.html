@@ -14,13 +14,15 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            overflow: hidden;
+            min-height: 100vh;
+            overflow-x: hidden;
         }
         .container {
-            text-align: center;
-            background-color: white;
+            width: 100%;
+            max-width: 600px;
             padding: 20px;
+            margin: 20px auto;
+            background-color: white;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             animation: fadeIn 1s ease-in-out;
@@ -57,6 +59,7 @@
         .logo {
             margin-bottom: 20px;
             animation: logoZoom 2s ease-in-out;
+            max-width: 150px;
         }
         @keyframes logoZoom {
             from { transform: scale(0); opacity: 0; }
@@ -76,11 +79,22 @@
             line-height: 1.6;
             animation: fadeIn 2.5s ease-in-out;
         }
+        iframe {
+            width: 100%;
+            height: 315px;
+            margin-top: 20px;
+            border: none;
+        }
+        @media (max-width: 600px) {
+            iframe {
+                height: 200px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="grabber-logo.png" alt="GRABBER Logo" class="logo" width="150">
+        <img src="grabber-logo.png" alt="GRABBER Logo" class="logo">
         <h1>Welcome to GRABBER!</h1>
         <p>GRABBER is a tool for SEO specialists and copywriters that allows you to optimize content directly in Google Docs.</p>
         <a href="privacy.html">Privacy Policy</a>
@@ -98,6 +112,9 @@
             </ul>
             <p>GRABBER utilizes Google Docs and Google Drive permissions to perform these functions while ensuring user data privacy.</p>
         </div>
+
+        <!-- Adding YouTube video -->
+        <iframe src="https://www.youtube.com/embed/qCOTto4-sZQ" allowfullscreen></iframe>
     </div>
 </body>
 </html>
