@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Політика конфіденційності - GRABBER</title>
+    <title>GRABBER - Privacy Policy</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,21 +14,34 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
+            overflow-x: hidden;
         }
         .container {
-            text-align: left;
-            background-color: white;
+            width: 100%;
+            max-width: 600px;
             padding: 20px;
+            margin: 20px auto;
+            background-color: white;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            max-width: 800px;
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
         h1 {
             color: #333;
+            animation: slideIn 1.2s ease-in-out;
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-100%); }
+            to { opacity: 1; transform: translateX(0); }
         }
         p {
             color: #666;
+            animation: fadeIn 1.5s ease-in-out;
         }
         a {
             display: inline-block;
@@ -38,33 +51,75 @@
             color: white;
             text-decoration: none;
             border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
         a:hover {
             background-color: #0056b3;
+        }
+        .logo {
+            margin-bottom: 20px;
+            animation: logoZoom 2s ease-in-out;
+            max-width: 150px;
+        }
+        @keyframes logoZoom {
+            from { transform: scale(0); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+        .content {
+            margin-top: 30px;
+            text-align: left;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .content h2 {
+            color: #333;
+            animation: slideIn 1.2s ease-in-out;
+        }
+        .content p, .content ul {
+            color: #666;
+            line-height: 1.6;
+            animation: fadeIn 2.5s ease-in-out;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Політика конфіденційності</h1>
-        <p>Ця політика конфіденційності описує, як інструмент GRABBER (далі – «ми», «нас» або «наш сервіс») збирає, використовує і захищає інформацію, яку ви надаєте під час використання нашого додатку.</p>
+        <img src="grabber-logo.png" alt="GRABBER Logo" class="logo">
+        <h1>Privacy Policy</h1>
 
-        <h2>1. Збір інформації</h2>
-        <p>Ми можемо збирати особисті дані, такі як ваше ім'я, електронну адресу та іншу інформацію, коли ви використовуєте наш додаток. Ми також можемо отримувати інформацію про використання нашого інструменту, як-от статистику використання ключових слів, але не зберігаємо ваш контент або документи.</p>
+        <div class="content">
+            <h2>Introduction</h2>
+            <p>At GRABBER, we value your privacy and are committed to protecting your personal data. This privacy policy outlines how we collect, use, and safeguard the information you provide while using our services.</p>
 
-        <h2>2. Використання інформації</h2>
-        <p>Зібрані дані використовуються для поліпшення нашого сервісу, забезпечення його безперебійної роботи, а також для надання кращих рекомендацій щодо SEO-оптимізації. Ми не ділимося вашими даними з третіми особами без вашої згоди.</p>
+            <h2>Information We Collect</h2>
+            <p>GRABBER only collects essential data necessary to provide our SEO tool's functionality within Google Docs. We may collect the following information:</p>
+            <ul>
+                <li>Keywords and document content analyzed in Google Docs.</li>
+                <li>Basic user data from your Google account (name, email) for the purpose of authentication and user experience customization.</li>
+            </ul>
 
-        <h2>3. Захист інформації</h2>
-        <p>Ми використовуємо різноманітні заходи безпеки для захисту вашої особистої інформації. Ми гарантуємо, що ваша інформація зберігається конфіденційно і не буде розголошена без вашої згоди, за винятком випадків, передбачених законодавством.</p>
+            <h2>How We Use Your Information</h2>
+            <p>GRABBER uses your information to offer an optimal user experience while working with our tool in Google Docs. Specifically, we use your data to:</p>
+            <ul>
+                <li>Analyze and highlight keywords within your documents.</li>
+                <li>Provide real-time keyword statistics for SEO purposes.</li>
+                <li>Enable the saving and editing of documents within the Google Drive interface.</li>
+            </ul>
 
-        <h2>4. Ваші права</h2>
-        <p>Ви маєте право запросити видалення або виправлення ваших особистих даних, які зберігаються в нашому додатку. Для цього, будь ласка, зв'яжіться з нами через контактну інформацію, наведену нижче.</p>
+            <h2>Data Security</h2>
+            <p>We prioritize the security of your data and ensure that no personal information is stored or transferred to third-party services. All data processing is done directly within the Google Docs environment, using Google Drive's secure framework.</p>
 
-        <h2>5. Контакти</h2>
-        <p>Якщо у вас виникли питання щодо цієї політики конфіденційності або вашої інформації, будь ласка, зверніться до нас за електронною адресою: zakusilovdanya@gmail.com.</p>
+            <h2>Third-Party Services</h2>
+            <p>GRABBER does not share your personal data with any third-party services or external providers. All functionality is executed within the Google Docs and Google Drive platform.</p>
 
-        <p><a href="/">Повернутися на головну</a></p>
+            <h2>Your Rights</h2>
+            <p>As a user of GRABBER, you have the right to access, modify, or delete your personal data at any time. To make such requests, please contact us directly through our support email.</p>
+
+            <h2>Changes to This Policy</h2>
+            <p>We reserve the right to update this privacy policy as necessary. Any changes will be promptly reflected on this page, and users will be notified accordingly.</p>
+
+            <h2>Contact Us</h2>
+            <p>If you have any questions regarding this privacy policy or how we handle your data, feel free to contact us at privacy@grabber.fyi.</p>
+        </div>
     </div>
 </body>
 </html>
