@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>GRABBER - Інструмент для SEO</title>
+    <title>GRABBER - SEO Tool</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -15,6 +15,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            overflow: hidden;
         }
         .container {
             text-align: center;
@@ -22,12 +23,23 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
         h1 {
             color: #333;
+            animation: slideIn 1.2s ease-in-out;
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-100%); }
+            to { opacity: 1; transform: translateX(0); }
         }
         p {
             color: #666;
+            animation: fadeIn 1.5s ease-in-out;
         }
         a {
             display: inline-block;
@@ -37,41 +49,54 @@
             color: white;
             text-decoration: none;
             border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
         a:hover {
             background-color: #0056b3;
         }
+        .logo {
+            margin-bottom: 20px;
+            animation: logoZoom 2s ease-in-out;
+        }
+        @keyframes logoZoom {
+            from { transform: scale(0); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
         .features {
             margin-top: 30px;
             text-align: left;
+            animation: fadeIn 2s ease-in-out;
         }
         .features h2 {
             color: #333;
+            animation: slideIn 1.2s ease-in-out;
         }
-        .features p {
+        .features p, .features ul {
             color: #666;
             line-height: 1.6;
+            animation: fadeIn 2.5s ease-in-out;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Ласкаво просимо до GRABBER!</h1>
-        <p>GRABBER - це інструмент для SEO-спеціалістів та копірайтерів, що дозволяє оптимізувати контент прямо в Google Docs.</p>
-        <a href="privacy.html">Політика конфіденційності</a>
-        <a href="terms.html">Умови використання</a>
+        <img src="grabber-logo.png" alt="GRABBER Logo" class="logo" width="150">
+        <h1>Welcome to GRABBER!</h1>
+        <p>GRABBER is a tool for SEO specialists and copywriters that allows you to optimize content directly in Google Docs.</p>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
 
         <div class="features">
-            <h2>Опис функціональних можливостей GRABBER</h2>
-            <p>GRABBER дозволяє користувачам виконувати аналіз ключових слів у реальному часі прямо в Google Docs, що допомагає оптимізувати вміст для SEO.</p>
-            <p>Основні функції GRABBER:</p>
+            <h2>GRABBER Features Overview</h2>
+            <p>GRABBER allows users to perform real-time keyword analysis directly in Google Docs, helping to optimize content for SEO.</p>
+            <p>Main features of GRABBER include:</p>
             <ul>
-                <li>Автоматичне підсвічування ключових слів у документах Google Docs.</li>
-                <li>Надання статистики використання ключових слів у реальному часі.</li>
-                <li>Редагування та збереження документів прямо через інтерфейс Google Drive.</li>
-                <li>Безпечне оброблення даних без зберігання або передачі стороннім сервісам.</li>
+                <li>Automatic highlighting of keywords in Google Docs.</li>
+                <li>Providing real-time keyword usage statistics.</li>
+                <li>Editing and saving documents directly through the Google Drive interface.</li>
+                <li>Secure data processing without storing or transferring data to third-party services.</li>
             </ul>
-            <p>GRABBER використовує дозволи Google Docs та Google Drive для виконання цих функцій, гарантуючи при цьому конфіденційність користувацьких даних.</p>
+            <p>GRABBER utilizes Google Docs and Google Drive permissions to perform these functions while ensuring user data privacy.</p>
         </div>
     </div>
 </body>
