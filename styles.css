@@ -106,19 +106,19 @@ header {
     top: 0;
     left: 0;
     z-index: 999;
+    max-height: 70px;
 }
 
 .navbar {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 10px 20px;
+    padding: 0 5px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 
 .navbar .logo img {
-    max-width: 70px;
+    max-width: 50px;
 }
 
 .navbar .menu {
