@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Умови використання - GRABBER</title>
+    <title>GRABBER - Terms of Use</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,21 +14,34 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
+            overflow-x: hidden;
         }
         .container {
-            text-align: left;
-            background-color: white;
+            width: 100%;
+            max-width: 600px;
             padding: 20px;
+            margin: 20px auto;
+            background-color: white;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            max-width: 800px;
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
         h1 {
             color: #333;
+            animation: slideIn 1.2s ease-in-out;
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-100%); }
+            to { opacity: 1; transform: translateX(0); }
         }
         p {
             color: #666;
+            animation: fadeIn 1.5s ease-in-out;
         }
         a {
             display: inline-block;
@@ -38,33 +51,75 @@
             color: white;
             text-decoration: none;
             border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
         a:hover {
             background-color: #0056b3;
+        }
+        .logo {
+            margin-bottom: 20px;
+            animation: logoZoom 2s ease-in-out;
+            max-width: 150px;
+        }
+        @keyframes logoZoom {
+            from { transform: scale(0); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+        .content {
+            margin-top: 30px;
+            text-align: left;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .content h2 {
+            color: #333;
+            animation: slideIn 1.2s ease-in-out;
+        }
+        .content p, .content ul {
+            color: #666;
+            line-height: 1.6;
+            animation: fadeIn 2.5s ease-in-out;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Умови використання</h1>
-        <p>Ці Умови використання (далі – «Умови») регулюють використання вами інструменту GRABBER (далі – «Ми», «Нас» або «Наш сервіс»). Використовуючи цей інструмент, ви погоджуєтеся дотримуватися цих Умов.</p>
+        <img src="grabber-logo.png" alt="GRABBER Logo" class="logo">
+        <h1>Terms of Use</h1>
+        <a href="/">Homepage</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <div class="content">
+            <h2>Introduction</h2>
+            <p>Welcome to GRABBER! These Terms of Use govern your use of our tool, which is integrated with Google Docs and Google Drive to help SEO specialists and copywriters optimize their content.</p>
 
-        <h2>1. Використання сервісу</h2>
-        <p>Інструмент GRABBER надається для використання як є. Ми не гарантуємо безперервність або безпомилковість роботи сервісу. Ми залишаємо за собою право змінювати або припиняти надання послуг у будь-який момент без попередження.</p>
+            <h2>Acceptance of Terms</h2>
+            <p>By using GRABBER, you agree to be bound by these Terms of Use. If you do not agree to these terms, you may not use the tool. GRABBER reserves the right to modify these terms at any time, and your continued use of the tool will constitute acceptance of the updated terms.</p>
 
-        <h2>2. Відповідальність</h2>
-        <p>Ми не несемо відповідальності за будь-які збитки або втрати, що можуть виникнути в результаті використання нашого інструменту. Ви використовуєте GRABBER на свій власний ризик.</p>
+            <h2>Access to the Service</h2>
+            <p>GRABBER provides access to its SEO tool through integration with Google Docs and Google Drive. You must have a Google account to use the service. GRABBER does not collect any personal information beyond the scope of Google’s authentication services and your document content for keyword analysis.</p>
 
-        <h2>3. Користувацький контент</h2>
-        <p>Ви несете відповідальність за контент, що створюється та використовуються у GRABBER. Ми не зберігаємо документи або ключові слова, які ви використовуєте у нашому інструменті.</p>
+            <h2>User Responsibilities</h2>
+            <p>When using GRABBER, you agree to:</p>
+            <ul>
+                <li>Use the tool only for lawful purposes and in a manner that does not infringe the rights of, or restrict or inhibit, anyone else’s use of the tool.</li>
+                <li>Ensure that your use of the tool complies with all applicable local, national, and international laws and regulations.</li>
+                <li>Not attempt to reverse engineer, modify, or otherwise tamper with the tool's functionality.</li>
+            </ul>
 
-        <h2>4. Зміни в Умовах</h2>
-        <p>Ми можемо час від часу вносити зміни до цих Умов. Оновлені версії Умов будуть публікуватися на цьому сайті, і вони набувають чинності з моменту публікації.</p>
+            <h2>Intellectual Property</h2>
+            <p>All content, trademarks, and intellectual property related to GRABBER remain the sole property of GRABBER. You are granted a limited, non-exclusive, non-transferable license to use the tool solely for personal or professional SEO purposes.</p>
 
-        <h2>5. Контакти</h2>
-        <p>Якщо у вас виникли питання щодо цих Умов або вашого використання GRABBER, будь ласка, зв'яжіться з нами за електронною адресою: zakusilovdanya@gmail.com.</p>
+            <h2>Limitation of Liability</h2>
+            <p>GRABBER is provided "as is" without warranty of any kind, either express or implied. We do not guarantee that the tool will be error-free or that it will operate without interruption. GRABBER is not responsible for any damages or data loss that may occur as a result of using the tool.</p>
 
-        <p><a href="/">Повернутися на головну</a></p>
+            <h2>Termination</h2>
+            <p>We reserve the right to terminate or suspend access to GRABBER at any time without notice if we believe you are in breach of these Terms of Use. Upon termination, your right to use the tool will cease immediately.</p>
+
+            <h2>Governing Law</h2>
+            <p>These Terms of Use are governed by and construed in accordance with the laws of the jurisdiction in which GRABBER operates. Any disputes arising from these terms shall be resolved through the courts of that jurisdiction.</p>
+
+            <h2>Contact Us</h2>
+            <p>If you have any questions about these Terms of Use, please contact us at terms@grabber.fyi.</p>
+        </div>
     </div>
 </body>
 </html>
