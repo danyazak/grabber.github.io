@@ -97,6 +97,10 @@ iframe {
     }
 }
 
+input{
+    display: none;
+}
+
 /* Стилі для хедер меню */
 header {
     width: 100%;
@@ -118,7 +122,7 @@ header {
 }
 
 .navbar .logo img {
-    max-width: 50px;
+    max-width: 69px;
 }
 
 .navbar .menu {
@@ -148,6 +152,8 @@ header {
     font-size: 24px;
     cursor: pointer;
 }
+
+
 
 /* Адаптивні стилі */
 @media (max-width: 768px) {
