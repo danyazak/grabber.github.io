@@ -149,7 +149,7 @@ header {
 
 .menu-icon {
     display: none;
-    font-size: 24px;
+    font-size: 39px;
     cursor: pointer;
 }
 
@@ -163,6 +163,7 @@ header {
 
     .menu-icon {
         display: block;
+        margin: 1%;
     }
 
     .navbar .menu {
