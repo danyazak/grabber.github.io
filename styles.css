@@ -188,3 +188,32 @@ header {
         display: none;
     }
 }
+
+/* Оверлей для затемнення */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    z-index: 999;
+}
+
+/* При відкритті меню */
+.menu.open {
+    right: 0;
+}
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Заблокувати скрол */
+body.noscroll {
+    overflow: hidden;
+}
