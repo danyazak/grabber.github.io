@@ -1,5 +1,5 @@
 // Отримати елементи
-const burger = document.getElementById('burger');
+const burger = document.getElementById('menu-icon');
 const menu = document.getElementById('menu');
 const overlay = document.getElementById('overlay');
 
