@@ -4,7 +4,7 @@ const menu = document.getElementById('menu');
 const overlay = document.getElementById('overlay');
 
 // Відкрити або закрити меню при натисканні на бургер
-burger.addEventListener('click', () => {
+menu-icon.addEventListener('click', () => {
     menu.classList.toggle('open');
     overlay.classList.toggle('active');
     document.body.classList.toggle('noscroll');  // Блокування скролу
