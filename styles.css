@@ -223,25 +223,24 @@ header {
     margin: 20px auto;
 }
 
-.form-container h2 {
-    text-align: center;
-    color: #333;
-}
-
 .form-container label {
     display: block;
     margin-bottom: 5px;
     color: #555;
 }
 
-.form-container input[type="text"],
-.form-container input[type="email"],
-.form-container textarea {
+/* Специфічні стилі для полів форми */
+.form-container .form-input {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+
+.form-container textarea {
+    resize: vertical;
+    max-height: 200px;
 }
 
 .form-container button {
@@ -256,6 +255,29 @@ header {
 
 .form-container button:hover {
     background-color: #0056b3;
+}
+
+/* Оригінальні стилі для всіх input залишаються */
+input {
+    display: none;
+}
+
+/* Виправлення для полів форми */
+.form-container input, .form-container textarea {
+    display: block;
+    box-sizing: border-box;
+}
+
+/* Анімації */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+    .form-container {
+        max-width: 90%;
+    }
 }
 
 /* Заблокувати скрол */
