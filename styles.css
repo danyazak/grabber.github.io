@@ -218,9 +218,21 @@ header {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
+    max-width: 600px; /* Збільшуємо максимальну ширину */
     margin: 40px auto;
     font-family: 'Montserrat', sans-serif;
+    animation: fadeInUp 1s ease-in-out; /* Додаємо анімацію */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .form-container form {
@@ -236,40 +248,42 @@ header {
 
 .form-container input[type="email"],
 .form-container textarea {
-    width: 100%;
-    padding: 10px;
+    width: 100%; /* Робимо поля ширшими */
+    padding: 15px; /* Збільшуємо відступи всередині полів */
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    transition: border-color 0.3s ease;
+    font-size: 16px; /* Робимо текст більшим */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Додаємо анімацію */
 }
 
 .form-container input[type="email"]:focus,
 .form-container textarea:focus {
     border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
     outline: none;
 }
 
 .form-container textarea {
-    min-height: 100px;
+    min-height: 150px; /* Робимо текстове поле більшим */
     resize: vertical;
 }
 
 .form-container button {
     background-color: #007bff;
     color: white;
-    padding: 10px;
+    padding: 12px;
     border: none;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 18px; /* Робимо кнопку більшою */
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .form-container button:hover {
     background-color: #0056b3;
+    transform: translateY(-2px); /* Додаємо анімацію при наведенні */
 }
 
 .form-container button:active {
@@ -279,19 +293,18 @@ header {
 @media (max-width: 600px) {
     .form-container {
         padding: 15px;
+        max-width: 100%; /* Адаптуємо ширину для мобільних пристроїв */
     }
     
     .form-container input[type="email"],
     .form-container textarea {
-        font-size: 13px;
+        font-size: 14px;
     }
     
     .form-container button {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
-
-
 /* Заблокувати скрол */
 body.noscroll {
     overflow: hidden;
