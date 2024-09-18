@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GRABBER - Support Form</title>
+    <meta name="description" content="Contact us for support via the GRABBER support form.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="grabber-logo.png" alt="GRABBER Logo">
+            </div>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon" id="burger">&#9776;</label>
+            <ul class="menu" id="menu">
+                <li><a href="/">Homepage</a></li>
+                <li><a href="terms.html">Terms of Use</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="support.html">Support</a></li> <!-- Новий пункт меню -->
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Support Form</h1>
+        <p>If you have any issues or need assistance, feel free to contact us via the form below.</p>
+
+        <!-- Support Form -->
+        <div class="form-container">
+            <form action="send_email.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
