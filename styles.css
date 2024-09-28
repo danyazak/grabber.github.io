@@ -291,54 +291,6 @@ header {
 }
 
 
-/* Контейнер для слайдера */
-.logo-slide-container {
-    position: relative;
-    width: 200px;
-    height: 48px;
-    margin: 20px;
-}
-
-/* Слайд логотипу */
-.logo-slide {
-    background-color: transparent;
-    border: 2px solid #777;
-    border-width: 2px 2px 2px 0;
-    height: 48px;
-    line-height: 48px;
-    margin: 16px 0 0 -170px;
-    position: relative;
-    text-align: center;
-    width: 200px;
-    transition: margin 1s ease;
-}
-
-/* При наведенні лого */
-.logo-slide:hover {
-    margin-left: 0;
-}
-
-/* Контент слайду (текст) */
-.logo-slide-content {
-    float: left;
-    width: 170px;
-    color: white;
-    font-weight: bold;
-    text-align: left;
-}
-
-/* Заголовок слайду (логотип) */
-.logo-slide-header {
-    float: left;
-    width: 30px;
-    transition: opacity 1s ease;
-}
-
-/* Зникання логотипу при наведенні */
-.logo-slide:hover .logo-slide-header {
-    opacity: 0;
-}
-
 
 /* Marketplace banner styling */
 
