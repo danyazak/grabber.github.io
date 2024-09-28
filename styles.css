@@ -310,34 +310,13 @@ header {
 }
 
 /* Marketplace banner styling */
-/* Стилізація банера для маркетплейсу */
-.marketplace-banner {
-    margin: 20px 0;
-    text-align: center;
-    background-color: #f5f5f5;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 .marketplace-banner img {
-    max-width: 150px;
+    max-width: 100%;
     margin-bottom: 10px; /* Додаємо відступ між лого і кнопкою */
 }
 
-.marketplace-button {
-    display: inline-block;
-    background-color: #007bff;
-    color: white; /* Робимо текст білим для читабельності */
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
+
 
 .marketplace-button:hover {
     background-color: #0056b3;
