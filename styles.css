@@ -248,7 +248,7 @@ header {
 
 .form-container input[type="email"],
 .form-container textarea {
-    width: 100%; /* Робимо поля ширшими */
+    width: 95%; /* Робимо поля ширшими */
     padding: 15px; /* Збільшуємо відступи всередині полів */
     margin-bottom: 20px;
     border: 1px solid #ccc;
